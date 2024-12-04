@@ -1,0 +1,242 @@
+@charset "UTF-8";
+:root{
+    --cor-background: #384569;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-background);
+    font: normal 15pt Arial, sans-serif;
+    color: #222222;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+    gap: 30px; /* Espaço entre itens */
+}
+
+/* Links */
+a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 20px; /* Tamanho do alvo clicável */
+    border-radius: 5px; /* Borda arredondada para links */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+
+a.active { /* script.js*/
+    background-color: #384569;
+    color: #fff;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    color: #f4f4f4; /* Texto claro */
+    background-color: #384569; /* Fundo igual ao do body */
+}
+
+header {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #dbdbdb;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    color: #dbdbdb;;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    max-width: 550px;
+    background: #5f9ea0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+}
+
+#dados {
+    margin-bottom: 20px;
+}
+
+#dados p {
+    margin-bottom: 15px;
+}
+
+#dados input[type="number"] {
+    background-color: #dbdbdb;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #929292;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#resultado {
+    padding: 15px;
+    margin-top: 30px;
+    background: rgba(206, 206, 206, 0.37);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    min-height: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 8px;
+    color: #dbdbdb;
+    border-radius: 5px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* tabuada */
+div input[type="number"] {
+    background-color: #dbdbdb;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #7e7e7e;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+div select {
+    padding: 10px;
+    width: 100%;
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12pt;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* analisador */
+#res {
+    padding: 15px;
+    margin-top: 30px;
+    background: rgba(206, 206, 206, 0.37);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+/* Seção de botões */
+section div p {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os botões */
+    gap: 10px; /* Espaço fixo entre os botões */
+}
+ 
+.button-div {
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #252a389f;
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 7px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #1f2328b5;
+}
+
+.button-div:hover {
+    transform: translate(-0.0em, 0.06em);
+    box-shadow: 0.0em 0.30em #1f2328c4;
+}
+  
+.button-div:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #1f2328c4;
+}
+
+/* calculadora */
+.calculadora {
+    position: absolute;
+    background-color: #5f9ea0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    border: none;
+    border-radius: 50px;
+    transition: all ease 0.1s;
+    box-shadow: 4px 4px 1px 0px #1f23288a;
+}
+
+.botao:hover {
+    transform: translate(-0.0em, 0.06em);
+    box-shadow: 0.2em 0.20em #1f2328a6;
+}
+
+.botao:active {
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 0px #1f2328c4;
+}
+
+#calculo {
+    font-size: 25px;
+    text-align: right;
+    background-color: #ffffff91;
+    width: 232px;
+    height: 52px;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+

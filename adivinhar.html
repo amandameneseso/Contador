@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="calculadora">
+                <a href="calculadora.html" target="_self"><strong>Calculadora</strong></a>
+            </li>
+            <li id="contador">
+                <a href="contador.html" target="_self"><strong>Supercontador</strong></a>
+            </li>
+            <li id="tabuada">
+                <a href="tabuada.html" target="_self"><strong>Tabuada</strong></a>
+            </li>
+            <li id="analisador">
+                <a href="analisador.html" target="_self"><strong>Analisador</strong></a>
+            </li>
+            <li id="adivinhar">
+                <a href="adivinhar.html" target="_self"><strong>Adivinhar</strong></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Adivinhe o número</h1>
+        <p>Estou pensando em um número de 0 a 100...</p>
+        <p>Você consegue adivinhar o número?</p>
+    </header>
+
+    <section>
+        <div id="divAdivinhar">
+            <input type="number" placeholder="Digite um número" name="numero" id="txtn">
+            <p><input type="button" value="Enviar" class="button-div" onclick="verificarNumero()"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &lt;3</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="scriptadivinhar.js"></script>
+
+</body>
+</html>

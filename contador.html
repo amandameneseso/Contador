@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercontador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="calculadora">
+                <a href="calculadora.html" target="_self"><strong>Calculadora</strong></a>
+            </li>
+            <li id="contador">
+                <a href="contador.html" target="_self"><strong>Supercontador</strong></a>
+            </li>
+            <li id="tabuada">
+                <a href="tabuada.html" target="_self"><strong>Tabuada</strong></a>
+            </li>
+            <li id="analisador">
+                <a href="analisador.html" target="_self"><strong>Analisador</strong></a>
+            </li>
+            <li id="adivinhar">
+                <a href="adivinhar.html" target="_self"><strong>Adivinhar</strong></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" placeholder="Digite um número" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" placeholder="Digite um número" name="fim" id="txtf"></p>
+            <p>Intervalo: <input type="number" placeholder="(Opcional)" name="intervalo" id="txtt"></p>
+            <p><input type="button" value="Contar" class="button-div" onclick="contar()">
+            <input type="button" value="Limpar" class="button-div" onclick="limpar()"></p>
+        </div>
+        <div id="resultado">
+            <p>Preparando a contagem...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &lt;3</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="scriptcontador.js"></script>
+
+</body>
+</html>
