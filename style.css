@@ -33,6 +33,7 @@ nav ul {
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
     gap: 30px; /* Espaço entre itens */
+    flex-wrap: wrap; /* Permitir quebra em telas menores */
 }
 
 /* Links */
@@ -48,6 +49,7 @@ a {
 a.active { /* script.js*/
     background-color: #384569;
     color: #fff;
+    transform: scale(0.95); /* Diminui levemente o tamanho */
 }
 
 /* Efeito ao passar o mouse */
@@ -70,7 +72,7 @@ h1 {
     font-weight: bold;
 }
 
-header p {
+header p { /* adivinhar */
     color: #dbdbdb;;
     text-align: center;
 }
@@ -85,22 +87,36 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
 }
 
+.input-number {
+    background-color: #dbdbdb;
+    font-family: monospace;
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input-number:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+  
+.input-number:active {
+    transform: scale(0.98);
+}
+
 #dados {
     margin-bottom: 20px;
 }
 
 #dados p {
     margin-bottom: 15px;
-}
-
-#dados input[type="number"] {
-    background-color: #dbdbdb;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #929292;
-    border-radius: 8px;
-    font-size: 1rem;
 }
 
 #resultado {
@@ -127,16 +143,6 @@ footer p {
 }
 
 /* tabuada */
-div input[type="number"] {
-    background-color: #dbdbdb;
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: 1px solid #7e7e7e;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
 div select {
     padding: 10px;
     width: 100%;
@@ -195,13 +201,10 @@ section div p {
 
 /* calculadora */
 .calculadora {
-    position: absolute;
     background-color: #5f9ea0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
     border-radius: 10px;
     padding: 10px;
+    margin-top: 20px;
 }
 
 .botao {
@@ -235,8 +238,6 @@ section div p {
     height: 52px;
     margin: 5px;
     padding: 6px;
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
 }
-
-
