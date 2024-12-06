@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root{
     --cor-background: #384569;
 
@@ -12,8 +13,8 @@
 }
 
 body {
+    font-size: 16px;
     background: var(--cor-background);
-    font: normal 15pt Arial, sans-serif;
     color: #222222;
     line-height: 1.6;
     display: flex;
@@ -89,7 +90,9 @@ section {
 
 .input-number {
     background-color: #dbdbdb;
-    font-family: monospace;
+    font-family: "Inconsolata", monospace;
+    font-weight: 800;
+    letter-spacing: 1.2px;
     font-size: 14px;
     width: 100%;
     height: 45px;
@@ -149,6 +152,9 @@ div select {
     background-color: #dbdbdb;
     border-radius: 8px;
     text-align: center;
+    font-family: "Inconsolata";
+    font-weight: 800;
+    letter-spacing: 1.2px;
     font-size: 12pt;
     display: block;
     margin-top: 30px;
@@ -173,7 +179,10 @@ section div p {
 }
  
 .button-div {
-    width: 150px;
+    font-family: "Inconsolata";
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    width: 160px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -201,6 +210,7 @@ section div p {
 
 /* calculadora */
 .calculadora {
+    font: normal 15pt Arial, sans-serif;
     background-color: #5f9ea0;
     border-radius: 10px;
     padding: 10px;
